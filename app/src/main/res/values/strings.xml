@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Apero</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="userName">Name</string>
+    <string name="map_key">AIzaSyBuvOk-xYsVgrzq4S_74Vr46_7m0DBfjCA</string>
+</resources>

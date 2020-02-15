@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "110403492254",
+    "firebase_url": "https://apero-bbbc0.firebaseio.com",
+    "project_id": "apero-bbbc0",
+    "storage_bucket": "apero-bbbc0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110403492254:android:670b6dd7dacedfdb469e8f",
+        "android_client_info": {
+          "package_name": "com.apero.task"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110403492254-if74dt33d8tsq7nad4v378og33brn0ui.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apero.task",
+            "certificate_hash": "8eaa92e25f4105b584b7ef668b5a2c21abbafd79"
+          }
+        },
+        {
+          "client_id": "110403492254-o2hatvqc43kij3avkltqf6hoi3t4bk8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjMDPKAllDuMNxN9FjzZXvS66PZ_Qog4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "110403492254-o2hatvqc43kij3avkltqf6hoi3t4bk8j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

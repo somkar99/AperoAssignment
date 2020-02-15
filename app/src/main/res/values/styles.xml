@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CollapsingToolbarLayoutExpandedTextStyle" parent="AppTheme">
+        <item name="android:textColor">@android:color/transparent</item>
+        <item name="android:textSize">0sp</item>
+    </style>
+
+    <style name="CollapsingToolbarLayoutCollapseStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColor">@android:color/white</item>
+
+    </style>
+    <style name="SubTitleText">
+        <item name="android:textSize">@dimen/abc_text_size_subhead_material</item>//16
+
+
+    </style>
+
+    <style name="ExtraLargeText">
+        <item name="android:textSize">@dimen/abc_text_size_headline_material</item> //24
+
+
+    </style>
+
+    <style name="TitleText">
+        <item name="android:textSize">@dimen/abc_text_size_title_material</item>//20
+
+
+    </style>
+    <style name="normalText">
+        <item name="android:textSize">@dimen/abc_text_size_small_material</item>//14
+
+
+    </style>
+    <style name="LargeText">
+        <item name="android:textSize">@dimen/abc_text_size_large_material</item> //22
+
+    </style>
+    <style name="SmallText">
+        <item name="android:textSize">12sp</item> //12
+
+    </style>
+</resources>
