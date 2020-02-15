@@ -1,11 +1,41 @@
 package com.apero.task.activity.utils
 
 import android.content.Context
+import android.util.Log
 import android.widget.TextView
+import com.google.firebase.iid.FirebaseInstanceId
 import org.json.JSONObject
 
 class Common {
 
+
+    companion object{
+
+        fun getToken(): String {
+            var token: String = ""
+            FirebaseInstanceId.getInstance().instanceId
+                    .addOnSuccessListener {
+                        if (it.token.isNullOrBlank().not()) {
+
+
+                            var token1 = it.token
+
+
+
+
+                            Log.d("FCM_TOKEN", it.token.toString())
+
+
+                        } else {
+                            return@addOnSuccessListener
+                        }
+
+                    }.addOnFailureListener {
+                        // Log.d("FAILED_TOKEN", it.message.toString())
+                    }
+            return token
+        }
+    }
     val file_name = "interview.json"
     var jObje: JSONObject? = null
 
@@ -49,6 +79,29 @@ class Common {
         return rad * 180.0 / Math.PI
     }
 
+    fun getToken(): String {
+        var token: String = ""
+        FirebaseInstanceId.getInstance().instanceId
+                .addOnSuccessListener {
+                    if (it.token.isNullOrBlank().not()) {
 
+
+                        var token1 = it.token
+
+
+
+
+                         Log.d("FCM_TOKEN", it.token.toString())
+
+
+                    } else {
+                        return@addOnSuccessListener
+                    }
+
+                }.addOnFailureListener {
+                    // Log.d("FAILED_TOKEN", it.message.toString())
+                }
+        return token
+    }
 
 }

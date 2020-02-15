@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.apero.task.R
+import com.apero.task.activity.utils.Common
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -134,6 +135,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun updateUI() {
+        Common.getToken()
         startActivity(Intent(this@RegisterActivity, HomeActivity::class.java))
         Toast.makeText(this, "Successfully signed in :)", Toast.LENGTH_LONG).show()
         finish()

@@ -10,6 +10,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.apero.task.R
+import com.apero.task.activity.utils.Common
 import com.google.android.gms.auth.api.Auth
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
@@ -114,6 +115,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun updateUI() {
+        Common.getToken()
         startActivity(Intent(this@LoginActivity, HomeActivity::class.java))
         Toast.makeText(this, "Successfully Logged in :)", Toast.LENGTH_LONG).show()
         finish()

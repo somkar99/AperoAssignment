@@ -39,6 +39,16 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/map_key" />
 
+        <service android:name=".activity.service.FirebaseService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".activity.service.Receiver"
+            android:enabled="true"
+            android:exported="false" />
 
     </application>
 
